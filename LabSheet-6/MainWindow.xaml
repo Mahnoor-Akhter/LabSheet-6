@@ -7,6 +7,132 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TabControl TabStripPlacement="Top">
+            <TabItem Header="Ex1" Width="75">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" Name="Ex1Btn" Click="Ex1Btn_Click"/>
+                    <ListBox Grid.Row="1" x:Name="exlbxdisplay" Margin="10"/>
+                    <TextBox x:Name="ex1TblkCount" Grid.Row="2" Margin="10"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ex2" Width="75" Margin="0.1,-2,0.1,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="175*"/>
+                        <ColumnDefinition Width="613*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="8.8"/>
+                        <RowDefinition Height="294.4"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" x:Name="Ex2Btn" Margin="169.153,1,344,0.2" Click="Ex2Btn_Click" Grid.Column="1"/>
+                    <ListBox Grid.Row="2" x:Name="exlbxdisplay1" Margin="10,1.2,10,-40" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="ex2TblkCount" Grid.Row="2" Margin="10,304.2,10,-55" Grid.ColumnSpan="2"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ex3" Width="75" Margin="0.1,-2,0.1,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="260*"/>
+                        <ColumnDefinition Width="13*"/>
+                        <ColumnDefinition Width="515*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" x:Name="Ex3Btn" Grid.Column="2" Margin="71.2,1,344,0.2" Click="Ex3Btn_Click"/>
+                    <TextBox Grid.Row="1" x:Name="ex3lbsdisplay" Margin="10,9.8,10,10" Grid.ColumnSpan="3"/>
+                    <TextBox x:Name="ex3TblkCount" Grid.Row="2" Margin="10,10,10,9.8" Grid.ColumnSpan="3"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ex4" Width="75" Margin="0.1,-2,0.1,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="319*"/>
+                        <ColumnDefinition Width="469*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" x:Name="Ex4Btn4" Grid.Column="1" Margin="24.562,1,344,0.2" Click="Ex4Btn4_Click"/>
+                    <ListBox Grid.Row="1" x:Name="exl4bxdisplay" Margin="10,9.8,10,10" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="ex4TblkCount" Grid.Row="2" Margin="10,10,10,9.8" Grid.ColumnSpan="2"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ex5" Width="75" Margin="0.1,-2,0.1,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="397*"/>
+                        <ColumnDefinition Width="24*"/>
+                        <ColumnDefinition Width="41*"/>
+                        <ColumnDefinition Width="326*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" x:Name="Ex5Btn" Margin="344,1,18.4,0.2" Grid.ColumnSpan="3" Click="Ex5Btn_Click"/>
+                    <ListBox Grid.Row="1" x:Name="ex5lbxdisplay" Margin="10,9.8,10,10" Grid.ColumnSpan="4"/>
+                    <TextBox x:Name="ex5TblkCount" Grid.Row="2" Margin="10,10,10,9.8" Grid.ColumnSpan="4"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ex6" Width="75" Margin="0.1,-2,0.1,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="481*"/>
+                        <ColumnDefinition Width="307*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" x:Name="Ex6Btn" Margin="344,1,36.999,0.2" Click="Ex6Btn_Click"/>
+                    <ListBox Grid.Row="1" x:Name="ex6lbxdisplay" Margin="10,9.8,10,10" Grid.ColumnSpan="2" SelectionChanged="ex6lbxdisplay_SelectionChanged"/>
+                    <TextBox x:Name="ex6TblkCount" Grid.Row="2" Margin="10,10,10,9.8" Grid.ColumnSpan="2"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ex7" Width="75" Margin="0.1,-2,0.1,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Content="Get Data" Width="100" Height="30" x:Name="Ex7Btn" Click="Ex7Btn_Click"/>
+                    <ListBox Grid.Row="1" x:Name="ex7lbxdisplay" Margin="10"/>
+                    <TextBox x:Name="ex7TblkCount" Grid.Row="2" Margin="10"/>
+
+
+                </Grid>
+            </TabItem>
+
+
+
+        </TabControl>
+
     </Grid>
 </Window>
